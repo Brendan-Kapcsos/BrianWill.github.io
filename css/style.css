@@ -122,7 +122,6 @@ input.input-text {
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: -1;
 }
 
 .star-section::after {
@@ -135,7 +134,6 @@ input.input-text {
     bottom: -50px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: -1;
 }
 
 .star-section h1,
@@ -149,7 +147,6 @@ input.input-text {
     font-size: 1.5rem;
 }
 
-/* About Section */
 .about {
     background-color: #fff;
     background-image: url(../images/willfamily.png);
@@ -159,7 +156,27 @@ input.input-text {
     margin-top: -25px;
 }
 
-/* Media Queries */
+.about h2{
+    color: #004475;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+
+footer{
+    background-color: #004475;
+}
+
+.logo{
+    width: 150px;
+}
+
+.fb-link{
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+
 @media (max-width: 992px) {
     .header {
         background-color: #004475;
@@ -177,19 +194,14 @@ input.input-text {
         background-image: url(../images/willfamily.png);
         background-size: auto 70vw;
         background-repeat: no-repeat;
-        background-position: center bottom;
+        background-position-x: 50%;
+        background-position-y: bottom;
         margin-top: -25px;
-        height: auto; /* Let content determine the height */
-        padding-bottom: 2rem; /* Extra space below text */
-        padding-right: 20vw; /* Reserve space on the right for the background image */
-    }
-
-    /* Ensure the text container has its own white background */
-    .about .col-lg-6 {
-        background-color: #fff;
-        padding: 1rem;
+        height: 95vw;
     }
 }
+
+
 
 @media (max-width: 767px) {
     .header {
@@ -203,29 +215,15 @@ input.input-text {
         font-size: 10vw;
     }
     .about {
-        height: auto;
-        padding-right: 10vw; /* Adjust right padding for smaller screens */
+        height: 115vw;
     }
+    
+    
 }
+
 
 @media (max-width: 576px) {
     .about {
-        height: auto;
-        padding-right: 5vw; /* Further adjust padding for very small screens */
-        /* Optionally, if the image is still too intrusive, you can remove it:
-           background-image: none; */
+        height: 140vw;
     }
-}
-
-footer{
-    background-color: #004475;
-}
-
-.logo{
-    width: 150px;
-}
-
-.fb-link{
-    color: #fff;
-    font-size: 1.25rem;
 }
