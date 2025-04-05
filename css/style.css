@@ -177,11 +177,17 @@ input.input-text {
         background-image: url(../images/willfamily.png);
         background-size: auto 70vw;
         background-repeat: no-repeat;
-        background-position-x: 50%;
-        background-position-y: bottom;
+        background-position: center bottom;
         margin-top: -25px;
-        height: auto; /* Remove fixed height */
-        padding-bottom: 2rem; /* Optional extra padding */
+        height: auto; /* Let content determine the height */
+        padding-bottom: 2rem; /* Extra space below text */
+        padding-right: 20vw; /* Reserve space on the right for the background image */
+    }
+
+    /* Ensure the text container has its own white background */
+    .about .col-lg-6 {
+        background-color: #fff;
+        padding: 1rem;
     }
 }
 
@@ -197,15 +203,17 @@ input.input-text {
         font-size: 10vw;
     }
     .about {
-        height: auto; /* Let content determine the height */
+        height: auto;
+        padding-right: 10vw; /* Adjust right padding for smaller screens */
     }
 }
 
 @media (max-width: 576px) {
     .about {
         height: auto;
-        /* Uncomment the next line if you want to remove the background image entirely on small screens */
-        /* background-image: none; */
+        padding-right: 5vw; /* Further adjust padding for very small screens */
+        /* Optionally, if the image is still too intrusive, you can remove it:
+           background-image: none; */
     }
 }
 
