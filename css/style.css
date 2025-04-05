@@ -227,3 +227,13 @@ footer{
         height: 140vw;
     }
 }
+
+
+@media (max-width: 476px) {
+    .about {
+        height: 180vw;
+    }
+    .about h2{
+        font-size: 2.25rem;
+    }
+}
