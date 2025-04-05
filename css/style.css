@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    /* Fixes font rendering in Safari */
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* General Styling */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    background-color: #004475;
+    background-image: url(../images/willflag.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    text-align: center;
+}
+
+.hero-heading-1 {
+    color: #C6D5E0;
+    font-size: 5.25rem;
+    font-weight: 900;
+    margin: 0;
+    margin-bottom: 0.75rem;
+}
+
+.hero-heading-2 {
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+.donate-btn {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    background: #7197B2;
+    border: 2px solid #7197B2;
+    padding: 0.4rem 1.5rem;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.25rem;
+    transition: 0.2s;
+}
+
+.donate-btn:hover {
+    background-color: #004475;
+}
+
+.bg-light-gray {
+    background-color: #EBEBEB;
+}
+
+.bg-light-gray h2 {
+    color: #004475;
+    text-align: center;
+    font-size: 2.55rem;
+    font-weight: 600;
+}
+
+.form-heading {
+    color: #004475;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+input.input-text {
+    width: 100%;
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #000;
+    border-radius: 0 !important;
+    padding-left: 0;
+    margin-bottom: 0.75rem;
+}
+
+.checkbox-wrapper{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-red {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.15rem;
+    background: #FA2728;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0.2rem 1rem;
+    transition: 0.3s;
+}
+
+
+.star-section {
+    background-color: #EBEBEB;
+    position: relative;
+    padding: 25px 0;
+    margin: 25px 0;
+}
+
+.star-section::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/star-icon.png);
+    background-size: cover;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.star-section::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/star-icon.png);
+    background-size: cover;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.star-section h1,
+.star-section h2 {
+    color: #004475;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.star-section h2 {
+    font-size: 1.5rem;
+}
+
+.about {
+    background-color: #fff;
+    background-image: url(../images/willfamily.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    margin-top: -25px;
+}
+
+.about h2{
+    color: #004475;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+
+footer{
+    background-color: #004475;
+}
+
+.logo{
+    width: 150px;
+}
+
+.fb-link{
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+
+@media (max-width: 992px) {
+    .header {
+        background-color: #004475;
+        background-image: url(../images/willflag-2.png);
+        background-size: auto 110vw;
+        background-repeat: no-repeat;
+        background-position-x: 65%;
+        background-position-y: bottom;
+        text-align: center;
+        height: 160vw;
+    }
+
+    .about {
+        background-color: #fff;
+        background-image: url(../images/willfamily.png);
+        background-size: auto 70vw;
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: bottom;
+        margin-top: -25px;
+        height: 95vw;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .header {
+        height: 185vw;
+    }
+    .hero-heading-2 {
+        font-size: 8.1vw;
+    }
+    .hero-heading-1 {
+        white-space: nowrap;
+        font-size: 10vw;
+    }
+    .about {
+        height: 115vw;
+    }
+    
+    
+}
+
+
+@media (max-width: 576px) {
+    .about {
+        height: 140vw;
+    }
+}
